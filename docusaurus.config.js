@@ -1,102 +1,132 @@
-// @ts-nocheck
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
-/** @type {import("@docusaurus/types").Config} */
-const config = {
-    title: "My Site",
-    tagline: "Dinosaurs are cool",
+module.exports = {
+    title: "木心项目",
+    tagline: "创建免费、易用的RISC-V处理器和开发环境",
     url: "https://microdynamics-cpu.github.io",
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "favicon.ico",
     organizationName: "microdynamics-cpu",
     projectName: "tree-core-website",
-
+    plugins: [require.resolve("./plugins/docusaurus-plugin-hotjar")],
     presets: [[
         "@docusaurus/preset-classic",
-        /** @type {import("@docusaurus/preset-classic").Options} */
-        ({
+        {
             docs: {
-                sidebarPath: require.resolve("./sidebars.js"),
-                // Please change this to your repo.
-                editUrl: "https://github.com/facebook/docusaurus/edit/main/website/"
+                path: "./docs",
+                sidebarPath: require.resolve("./sidebars.json")
             },
-            blog: {
-                showReadingTime: true,
-                // Please change this to your repo.
-                editUrl: "https://github.com/facebook/docusaurus/edit/main/website/blog/"
+            pages: {
+                path: "./pages"
             },
             theme: {
-                customCss: require.resolve("./src/css/custom.css")
-            }
-        }),
+                customCss: require.resolve("./src/theme/index.css")
+            },
+            sidebarCollapsible: false
+        }
     ]],
-
-    themeConfig:
-    /** @type {import("@docusaurus/preset-classic").ThemeConfig} */
-    ({
+    themeConfig: {
+        colorMode: {
+            defaultMode: "dark",
+            disableSwitch: false,
+            respectPrefersColorScheme: false
+        },
+        announcementBar: {
+            id: "treecore bar",
+            content: "如果你喜欢木心项目，请在" +
+                     "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
+                     "上给我们点一个星！⭐️",
+            backgroundColor: "#000",
+            textColor: "#fff",
+            isCloseable: true
+        },
         navbar: {
-            title: "My Site",
+            title: "",
             logo: {
-                alt: "My Site Logo",
-                src: "img/logo.svg",
+                alt: "treecore logo",
+                src: "img/treecore.svg"
             },
             items: [{
-                type: "doc",
-                docId: "intro",
-                position: "left",
-                label: "Tutorial",
-            }, {
-                to: "/blog",
-                label: "Blog",
+                label: "文档",
+                to: "/docs/introduction/background",
                 position: "left"
             }, {
-                href: "https://github.com/facebook/docusaurus",
-                label: "GitHub",
-                position: "right",
-            }]
-        },
-        footer: {
-            style: "dark",
-            links: [{
-                title: "Docs",
-                items: [{
-                    label: "Tutorial",
-                    to: "/docs/intro",
-                }],
+                label: "教程",
+                to: "/docs/tutorials/tutorials",
+                position: "left",
             }, {
-                title: "Community",
-                items: [{
-                    label: "Stack Overflow",
-                    href: "https://stackoverflow.com/questions/tagged/docusaurus",
-                }, {
-                    label: "Discord",
-                    href: "https://discordapp.com/invite/docusaurus",
-                }, {
-                    label: "Twitter",
-                    href: "https://twitter.com/docusaurus",
-                }]
+                label: "示例",
+                to: "/docs/examples/examples",
+                position: "left"
             }, {
-                title: "More",
-                items: [{
-                    label: "Blog",
-                    to: "/blog",
-                }, {
-                    label: "GitHub",
-                    href: "https://github.com/facebook/docusaurus",
-                }]
+                label: "代码",
+                href: "https://github.com/microdynamics-cpu",
+                position: "left"
             }],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            hideOnScroll: false
+        },
+        hideableSidebar: true,
+        footer: {
+            links: []
         },
         prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
+            theme: require("prism-react-renderer/themes/oceanicNext"),
+            defaultLanguage: "verilog"
+        },
+        // algolia: {
+        //     algoliaOptions: {},
+        //     apiKey: "",
+        //     indexName: "treecore",
+        // },
+        // googleAnalytics: {
+        //     trackingID: ""
+        // },
+        // gtag: {
+        //     trackingID: "",
+        // },
+        hotjar: {
+            hjid: "treecore"
         }
-    })
+    },
+    customFields: {
+        companies: [{
+            url: "https://www.deskpro.com/",
+            image: "deskpro.png",
+            alt: "Deskpro"
+        }, {
+            url: "https://www.nokia.com/",
+            image: "nokia.png",
+            alt: "Nokia"
+        }, {
+            url: "https://github.com/react-page/react-page/tree/master/packages/plugins/createPluginMaterialUi",
+            image: "react-page.png",
+            alt: "React Page",
+        }, {
+            url: "https://graphback.dev",
+            image: "graphback.png",
+            alt: "Graphback",
+        }, {
+            url: "https://www.onyx-one.com/",
+            image: "onyx-one.png",
+            alt: "Onyx one",
+        }, {
+            url: "https://aerogear.org",
+            image: "aerogear.png",
+            alt: "Aerogear"
+        }, {
+            url: "https://cleverbeagle.com/together",
+            image: "cleverbeagle.png",
+            alt: "Clever Beagle",
+        }, {
+            url: "http://www.orionjs.org",
+            image: "orionjs.png",
+            alt: "Orion.js"
+        }, {
+            url: "https://boulder.care",
+            image: "boulder.svg",
+            alt: "Boulder Care",
+        }],
+        email: "microdynamics@126.com",
+        keywords: ["forms", "react", "schema"]
+    }
 };
-
-module.exports = config;

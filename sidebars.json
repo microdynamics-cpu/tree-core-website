@@ -1,0 +1,40 @@
+{
+    "docs": {
+        "项目介绍": [
+            "introduction/background",
+            {
+                "项目简介": [
+                    "introduction/description_cpu",
+                    "introduction/description_ide"
+                ]
+            },
+            "introduction/future"
+        ],
+        "开始上手": [
+            {
+                "安装方法": [
+                    "start/installation_cpu",
+                    "start/installation_ide"
+                ]
+            },
+            {
+                "详细配置": [
+                    "start/configuration_cpu",
+                    "start/configuration_ide"
+                ]
+            }
+        ],
+        "教程文档": [
+            "tutorials/tutorials"
+        ],
+        "示例文档": [
+            "examples/examples"
+        ],
+        "接口文档": [
+            "api/api"
+        ],
+        "问题文档": [
+            "faq/faq"
+        ]
+    }
+}
