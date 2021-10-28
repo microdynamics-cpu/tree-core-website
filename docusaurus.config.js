@@ -1,6 +1,6 @@
 module.exports = {
     title: "木心项目",
-    tagline: "创建免费、易用的RISC-V处理器和开发环境",
+    tagline: "创建免费、易用的RISC-V处理器核和开发环境",
     url: "https://microdynamics-cpu.github.io",
     baseUrl: "/",
     onBrokenLinks: "throw",
@@ -48,8 +48,12 @@ module.exports = {
             },
             items: [{
                 label: "文档",
-                to: "/docs/introduction/background",
+                to: "/docs/intro/intro_background",
                 position: "left"
+            }, {
+                label: "入门",
+                to: "/docs/start/start_installation",
+                position: "left",
             }, {
                 label: "教程",
                 to: "/docs/tutorials/tutorials",
@@ -58,6 +62,10 @@ module.exports = {
                 label: "示例",
                 to: "/docs/examples/examples",
                 position: "left"
+            }, {
+                label: "接口",
+                to: "/docs/api/api_module_doc",
+                position: "left",
             }, {
                 label: "代码",
                 href: "https://github.com/microdynamics-cpu",
@@ -85,10 +93,12 @@ module.exports = {
         //     trackingID: "",
         // },
         hotjar: {
-            hjid: "treecore"
+            hjid: 000
         }
     },
     customFields: {
+        email: "microdynamics@126.com",
+        keywords: ["forms", "react", "schema"],
         companies: [{
             url: "https://www.deskpro.com/",
             image: "deskpro.png",
@@ -126,7 +136,5 @@ module.exports = {
             image: "boulder.svg",
             alt: "Boulder Care",
         }],
-        email: "microdynamics@126.com",
-        keywords: ["forms", "react", "schema"]
     }
 };

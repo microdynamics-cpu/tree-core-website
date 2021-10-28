@@ -1,28 +1,14 @@
 {
     "docs": {
         "项目介绍": [
-            "introduction/background",
-            {
-                "项目简介": [
-                    "introduction/description_cpu",
-                    "introduction/description_ide"
-                ]
-            },
-            "introduction/future"
+            "intro/intro_background",
+            "intro/intro_description",
+            "intro/intro_future",
+            "intro/intro_changelog"
         ],
         "开始上手": [
-            {
-                "安装方法": [
-                    "start/installation_cpu",
-                    "start/installation_ide"
-                ]
-            },
-            {
-                "详细配置": [
-                    "start/configuration_cpu",
-                    "start/configuration_ide"
-                ]
-            }
+            "start/start_installation",
+            "start/start_configuration"
         ],
         "教程文档": [
             "tutorials/tutorials"
@@ -31,9 +17,11 @@
             "examples/examples"
         ],
         "接口文档": [
-            "api/api"
+            "api/api_under_tech",
+            "api/api_module_spec",
+            "api/api_module_doc"
         ],
-        "问题文档": [
+        "常见问题": [
             "faq/faq"
         ]
     }

@@ -1,4 +1,4 @@
 ---
 id: "examples"
-title: "示例汇总"
+title: "示例文档"
 ---

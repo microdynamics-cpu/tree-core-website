@@ -1,4 +1,4 @@
 ---
 id: "tutorials"
-title: "教程汇总"
+title: "教程文档"
 ---
