@@ -1,4 +1,5 @@
-{
+
+module.exports = {
     "docs": {
         "项目介绍": [
             "intro/intro_background",
@@ -25,4 +26,4 @@
             "faq/faq"
         ]
     }
-}
+};

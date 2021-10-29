@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import { LandingPage } from "../pages-parts/LandingPage/LandingPage";
+import { MainPage } from "../components/MainPage";
 
 export default function IndexPage() {
     const context = useDocusaurusContext();
@@ -13,7 +13,7 @@ export default function IndexPage() {
 
     return (
         <Layout description={ tagline } keywords={ keywords }>
-            <LandingPage />
+            <MainPage />
         </Layout>
     );
 }

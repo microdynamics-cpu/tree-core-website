@@ -3,10 +3,10 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import styles from "../../index.module.css";
-import { ShowcaseCard } from "./ShowcaseCard";
+import styles from "../../pages/index.module.css";
+import { BaseCardShowcase } from "./BaseCardShowcase";
 
-export function Footer() {
+export function TheFooter() {
     const context = useDocusaurusContext();
     const { email } = context.siteConfig.customFields;
 
@@ -15,7 +15,7 @@ export function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <ShowcaseCard />
+                        <BaseCardShowcase />
                     </div>
                     <div className={ classNames("col",
                                                 styles["offset-column"]) }>

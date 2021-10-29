@@ -8,19 +8,15 @@ module.exports = {
     favicon: "favicon.ico",
     organizationName: "microdynamics-cpu",
     projectName: "tree-core-website",
-    plugins: [require.resolve("./plugins/docusaurus-plugin-hotjar")],
     presets: [[
         "@docusaurus/preset-classic",
         {
             docs: {
                 path: "./docs",
-                sidebarPath: require.resolve("./sidebars.json")
-            },
-            pages: {
-                path: "./pages"
+                sidebarPath: require.resolve("./sidebars.js")
             },
             theme: {
-                customCss: require.resolve("./src/theme/index.css")
+                customCss: require.resolve("./src/css/custom.css")
             },
             sidebarCollapsible: false
         }
@@ -41,7 +37,6 @@ module.exports = {
             isCloseable: true
         },
         navbar: {
-            title: "",
             logo: {
                 alt: "treecore logo",
                 src: "img/treecore.svg"
@@ -51,7 +46,7 @@ module.exports = {
                 to: "/docs/intro/intro_background",
                 position: "left"
             }, {
-                label: "入门",
+                label: "开始",
                 to: "/docs/start/start_installation",
                 position: "left",
             }, {
@@ -91,50 +86,10 @@ module.exports = {
         // },
         // gtag: {
         //     trackingID: "",
-        // },
-        hotjar: {
-            hjid: 000
-        }
+        // }
     },
     customFields: {
         email: "microdynamics@126.com",
-        keywords: ["forms", "react", "schema"],
-        companies: [{
-            url: "https://www.deskpro.com/",
-            image: "deskpro.png",
-            alt: "Deskpro"
-        }, {
-            url: "https://www.nokia.com/",
-            image: "nokia.png",
-            alt: "Nokia"
-        }, {
-            url: "https://github.com/react-page/react-page/tree/master/packages/plugins/createPluginMaterialUi",
-            image: "react-page.png",
-            alt: "React Page",
-        }, {
-            url: "https://graphback.dev",
-            image: "graphback.png",
-            alt: "Graphback",
-        }, {
-            url: "https://www.onyx-one.com/",
-            image: "onyx-one.png",
-            alt: "Onyx one",
-        }, {
-            url: "https://aerogear.org",
-            image: "aerogear.png",
-            alt: "Aerogear"
-        }, {
-            url: "https://cleverbeagle.com/together",
-            image: "cleverbeagle.png",
-            alt: "Clever Beagle",
-        }, {
-            url: "http://www.orionjs.org",
-            image: "orionjs.png",
-            alt: "Orion.js"
-        }, {
-            url: "https://boulder.care",
-            image: "boulder.svg",
-            alt: "Boulder Care",
-        }],
+        keywords: ["risc-v"]
     }
 };

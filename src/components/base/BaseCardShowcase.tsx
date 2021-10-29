@@ -2,9 +2,9 @@ import classNames from "classnames";
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import styles from "../../index.module.css";
+import styles from "../../pages/index.module.css";
 
-export function ShowcaseCard() {
+export function BaseCardShowcase() {
     const context = useDocusaurusContext();
     const { tagline } = context.siteConfig;
 
