@@ -22,6 +22,9 @@ module.exports = {
             "api/api_module_spec",
             "api/api_module_doc"
         ],
+        "风格指南": [
+            "guide/guide"
+        ],
         "常见问题": [
             "faq/faq"
         ]

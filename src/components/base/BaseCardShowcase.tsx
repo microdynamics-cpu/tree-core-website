@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import styles from "../../pages/index.module.css";
+import styles from "../../css/index.module.css";
 
 export function BaseCardShowcase() {
     const context = useDocusaurusContext();

@@ -2,9 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import { MainPage } from "../components/MainPage";
-
-export default function initIndexPage() {
+export default function initTeamPage() {
     const context = useDocusaurusContext();
     const {
         tagline,
@@ -13,7 +11,6 @@ export default function initIndexPage() {
 
     return (
         <Layout description={ tagline } keywords={ keywords }>
-            <MainPage />
         </Layout>
     );
 }

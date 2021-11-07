@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import Link from "@docusaurus/Link";
 
-import styles from "../../pages/index.module.css";
+import styles from "../../css/index.module.css";
 
 export type ButtonProps = JSX.IntrinsicElements["button"] & { to: string };
 

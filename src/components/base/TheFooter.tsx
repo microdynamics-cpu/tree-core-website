@@ -3,7 +3,7 @@ import React from "react";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-import styles from "../../pages/index.module.css";
+import styles from "../../css/index.module.css";
 import { BaseCardShowcase } from "./BaseCardShowcase";
 
 export function TheFooter() {
@@ -54,7 +54,7 @@ export function TheFooter() {
                             <Link to="https://github.com/microdynamics-cpu">
                                 <li>代码仓库</li>
                             </Link>
-                            <Link to="/blog">
+                            <Link to="/">
                                 <li>项目博客</li>
                             </Link>
                         </ul>
