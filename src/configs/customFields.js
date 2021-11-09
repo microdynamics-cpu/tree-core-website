@@ -113,7 +113,7 @@ module.exports = {
             }]
         }
     },
-    websiteCopyright: `Copyright © ${new Date().getFullYear()} MicroDynamics`,
+    websiteCopyright: `Copyright © ${new Date().getFullYear()} MicroDynamics CPU`,
     teamEmail: "microdynamics@126.com",
     teamGitHubUrl: "https://github.com/microdynamics",
     projectTagline: "创建免费、易用的RISC-V处理器核和开发环境",
