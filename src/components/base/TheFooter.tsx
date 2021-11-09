@@ -8,7 +8,13 @@ import { BaseCardShowcase } from "./BaseCardShowcase";
 
 export function TheFooter() {
     const context = useDocusaurusContext();
-    const { email } = context.siteConfig.customFields;
+    const { websiteBar, teamEmail } = context.siteConfig.customFields;
+
+    const websiteBarArr = [
+        websiteBar.docs,
+        websiteBar.community,
+        websiteBar.communication
+    ];
 
     return (
         <footer className={ classNames("hero hero--primary", styles.footer) }>
@@ -17,31 +23,52 @@ export function TheFooter() {
                     <div className="col">
                         <BaseCardShowcase />
                     </div>
-                    <div className={ classNames("col",
+                    {
+                        websiteBarArr.map((bar, i) => {
+                            return (
+                                <div key={ i } className={
+                                    classNames("col", styles["offset-column"]) }>
+                                    <h2 className={
+                                        classNames(styles.text,
+                                                   styles["footer-heading"]) }>
+                                        { bar.label }
+                                    </h2>
+                                    <ul className={ styles.bullets }>
+                                        {
+                                            bar.items.map((item, j) => {
+                                                return (
+                                                    <Link key={ j } to={ item.to }>
+                                                        <li>{ item.label }</li>
+                                                    </Link>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            )
+                        })
+                    }
+
+
+
+
+
+                    {/* <div className={ classNames("col",
                                                 styles["offset-column"]) }>
                         <h2 className={ classNames(styles.text,
                                                    styles["footer-heading"]) }>
                             文档
                         </h2>
                         <ul className={ styles.bullets }>
-                            <Link to="/docs/intro/intro_background">
-                                <li>项目介绍</li>
-                            </Link>
-                            <Link to="/docs/start/start_installation">
-                                <li>开始上手</li>
-                            </Link>
-                            <Link to="/docs/tutorials/tutorials">
-                                <li>教程文档</li>
-                            </Link>
-                            <Link to="/docs/examples/examples">
-                                <li>示例文档</li>
-                            </Link>
-                            <Link to="/docs/api/api_module_doc">
-                                <li>接口文档</li>
-                            </Link>
-                            <Link to="/docs/faq/faq">
-                                <li>常见问题</li>
-                            </Link>
+                            {
+                                websiteBar.docs.map((item) => {
+                                    return (
+                                        <Link to={ item.to }>
+                                            <li>{ item.label }</li>
+                                        </Link>
+                                    );
+                                })
+                            }
                         </ul>
                     </div>
                     <div className={ classNames("col",
@@ -51,23 +78,47 @@ export function TheFooter() {
                             社区
                         </h2>
                         <ul className={ styles.bullets }>
-                            <Link to="https://github.com/microdynamics-cpu">
-                                <li>代码仓库</li>
-                            </Link>
-                            <Link to="/">
-                                <li>项目博客</li>
-                            </Link>
+                            {
+                                websiteBar.community.map((item) => {
+                                    return (
+                                        <Link to={ item.to }>
+                                            <li>{ item.label }</li>
+                                        </Link>
+                                    );
+                                })
+                            }
                         </ul>
                     </div>
+
                     <div className={ classNames("col",
+                                                styles["offset-column"]) }>
+                        <h2 className={ classNames(styles.text,
+                                                   styles["footer-heading"]) }>
+                            交流
+                        </h2>
+                        <ul className={ styles.bullets }>
+                            {
+                                websiteBar.communication.map((item) => {
+                                    return (
+                                        <Link to={ item.to }>
+                                            <li>{ item.label }</li>
+                                        </Link>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div> */}
+
+
+                    {/* <div className={ classNames("col",
                                                 styles["offset-column"]) }>
                         <h2 className={ classNames(styles.text,
                                                 styles["footer-heading"]) }>
                             交流
                         </h2>
-                        <Link to={ `mailto:${ email }` }>
+                        <Link to={ `mailto:${ teamEmail }` }>
                             <p className={ classNames(styles.text, styles.paragraph) }>
-                                { email }
+                                { teamEmail }
                             </p>
                         </Link>
                         <a href="https://github.com/microdynamics">
@@ -78,13 +129,13 @@ export function TheFooter() {
                                 style={{ height: "6em" }} />
                         </a>
                         <br />
-                    <p className={ classNames(styles.text, styles.paragraph) }
-                       style={{ display: "inline-block", fontSize: "0.8em" }}>
-                        Copyright © 2021 MicroDyanmics.
-                        <br />
-                        All Rights Reserved.
-                    </p>
-                </div>
+                        <p className={ classNames(styles.text, styles.paragraph) }
+                        style={{ display: "inline-block", fontSize: "0.8em" }}>
+                            Copyright © 2021 MicroDyanmics.
+                            <br />
+                            All Rights Reserved.
+                        </p>
+                    </div> */}
                 </div>
             </div>
         </footer>
