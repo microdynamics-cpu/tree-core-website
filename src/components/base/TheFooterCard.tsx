@@ -13,7 +13,7 @@ export function TheFooterCard() {
                                     styles["border-dashed"]) }>
             <div>
                 <img alt="microdynamics-cpu logo" src="img/microdynamics-cpu.svg"
-                     style={{ height: 5.5 + "em"}} />
+                     style={{ height: 6.0 + "em"}} />
                 <img alt="treecore logo" src="img/treecore.svg"
                      style={{ height: 5.5 + "em" }} />
             </div>

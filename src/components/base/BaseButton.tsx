@@ -8,13 +8,12 @@ export type ButtonProps = JSX.IntrinsicElements["button"] & { to: string };
 
 export function BaseButton({ children, className, to, ...props }: ButtonProps) {
     return (
-        <Link to={to}>
+        <Link to={ to }>
             <button
                 { ...props }
                 className={ classNames("button button--lg button--primary",
                                        styles["call-to-action"],
-                                       className,
-                ) }>
+                                       className) }>
                 { children }
             </button>
         </Link>

@@ -6,19 +6,22 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "../../css/index.module.css";
 import { BaseButton } from "./BaseButton";
 
+import Icon from "@mdi/react";
+import { mdiMicrosoftWindows, mdiLinux, mdiApple } from "@mdi/js";
+
 type SystemWindowProps = JSX.IntrinsicElements["div"];
 
 const os = [{
     alt: "Windows",
-    src: "os/windows.svg",
+    path: mdiMicrosoftWindows,
     to: ""
 }, {
     alt: "Linux",
-    src: "os/linux.svg",
+    path: mdiLinux,
     to: ""
 }, {
     alt: "Mac",
-    src: "os/mac.png",
+    path: mdiApple,
     to: ""
 }];
 
@@ -35,40 +38,49 @@ export function TheHeader() {
                         <span className={ classNames(styles.text,
                                                      styles["text-big"],
                                                      styles.title) }>
-                            {title}
+                            { title }
                         </span>
                         <span className={ classNames(styles.description,
                                                      styles.text,
                                                      styles["text-huge"]) }>
                             { tagline }
                         </span>
-                        <ul className={ classNames(styles.text, styles.bullets) }>
+                        <ul className={ classNames(styles.text,
+                                                   styles.bullets) }>
                             <li>简单易学</li>
-                            <li>图表交互</li>
                             <li>扩展性强</li>
                             <li>兼容性强</li>
+                            <li>开源免费</li>
                         </ul>
                         <div className={ styles["center-if-sm"] }>
-                            <p className={ classNames(styles.text, styles.supported) }>
+                            <p className={ classNames(styles.text,
+                                                      styles.supported) }>
                                 支持的操作系统:
                             </p>
-                            {/* { os.map(({ alt, src, to }) => (
-                                <Link className={ styles["theme-icon"] }
-                                      key={ alt }
-                                      to={ to }>
-                                    <img alt={ alt } src={`assets/${ src }`} />
-                                    <span> { alt }</span>
-                                </Link>
-                            )) } */}
+                            {
+                                os.map(({ alt, path, to }) => (
+                                    <Link className={ styles["theme-icon"] }
+                                          key={ alt }
+                                          to={ to }
+                                          style={{ width: 80,
+                                                   textAlign: "center",
+                                                   marginRight: 0 }}>
+                                        <Icon path={ path }
+                                              size={ 1.5 } />
+                                        <div> { alt }</div>
+                                    </Link>
+                                ))
+                            }
                         </div>
                         <div className={ styles["center-if-sm"] }>
-                            <BaseButton to="/docs/tutorials/tutorials">
+                            <BaseButton to="/docs/tutorials/tutorials"
+                                        style={{ marginTop: 3 + "em" }}>
                                 开始上手
                             </BaseButton>
                         </div>
                     </div>
                     <div className="col">
-                        {/* <Showcase /> */}
+
                     </div>
                 </div>
             </div>
