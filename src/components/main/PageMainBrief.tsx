@@ -4,12 +4,11 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import styles from "../../css/index.module.css";
-import { BaseButton } from "./BaseButton";
+import { BaseButton } from "../base/BaseButton";
+import { PageMainBriefCard } from "./PageMainBriefCard";
 
 import Icon from "@mdi/react";
 import { mdiMicrosoftWindows, mdiLinux, mdiApple } from "@mdi/js";
-
-type SystemWindowProps = JSX.IntrinsicElements["div"];
 
 const os = [{
     alt: "Windows",
@@ -25,7 +24,7 @@ const os = [{
     to: ""
 }];
 
-export function TheHeader() {
+export function PageMainBrief() {
     const context = useDocusaurusContext();
     const { siteConfig = {} } = context;
     const { title, tagline } = siteConfig;
@@ -80,7 +79,7 @@ export function TheHeader() {
                         </div>
                     </div>
                     <div className="col">
-
+                        <PageMainBriefCard />
                     </div>
                 </div>
             </div>
