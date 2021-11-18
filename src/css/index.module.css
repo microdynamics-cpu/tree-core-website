@@ -192,6 +192,10 @@
     border-radius: unset;
 }
 
+.system-window + .system-window:hover {
+    opacity: 0.2;
+}
+
 .system-top-bar {
     background-image: linear-gradient(
         to right,

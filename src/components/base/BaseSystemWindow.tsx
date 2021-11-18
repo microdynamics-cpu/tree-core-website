@@ -13,6 +13,8 @@ export function BaseSystemWindow({ children, className, ...props } :
                                    styles["blue-accent"],
                                    styles["preview-border"],
                                    className) }
+            style={{ borderBottomLeftRadius: 0,
+                     borderBottomRightRadius: 0 }}
             {...props} >
             <div className={ styles["system-top-bar"] }>
                 <span
