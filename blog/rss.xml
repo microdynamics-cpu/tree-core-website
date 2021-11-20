@@ -4,28 +4,28 @@
         <title>木心项目 Blog</title>
         <link>https://microdynamics-cpu.github.io/blog</link>
         <description>木心项目 Blog</description>
-        <lastBuildDate>Sun, 07 Nov 2021 03:37:52 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Nov 2021 09:19:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <item>
-            <title><![CDATA[木心处理器核（或开发环境）xxx]]></title>
-            <link>https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_news_xxx</link>
-            <guid>yyyy-MM-dd_news_xxx</guid>
-            <pubDate>Sun, 07 Nov 2021 03:37:52 GMT</pubDate>
-            <description><![CDATA[木心处理器核（或开发环境）xxx。]]></description>
-        </item>
         <item>
             <title><![CDATA[木心处理器核（或开发环境）应用在xxx]]></title>
             <link>https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_apps_xxx</link>
             <guid>yyyy-MM-dd_apps_xxx</guid>
-            <pubDate>Sun, 07 Nov 2021 03:37:06 GMT</pubDate>
+            <pubDate>Sat, 20 Nov 2021 09:19:07 GMT</pubDate>
             <description><![CDATA[木心处理器核（或开发环境）应用在xxx。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[木心处理器核（或开发环境）xxx]]></title>
+            <link>https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_news_xxx</link>
+            <guid>yyyy-MM-dd_news_xxx</guid>
+            <pubDate>Sat, 20 Nov 2021 09:19:07 GMT</pubDate>
+            <description><![CDATA[木心处理器核（或开发环境）xxx。]]></description>
         </item>
         <item>
             <title><![CDATA[木心处理器核（或开发环境）发布x.x.x版本]]></title>
             <link>https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_version_x.x.x</link>
             <guid>yyyy-MM-dd_version_x.x.x</guid>
-            <pubDate>Sat, 06 Nov 2021 08:38:34 GMT</pubDate>
+            <pubDate>Sat, 20 Nov 2021 09:19:07 GMT</pubDate>
             <description><![CDATA[木心处理器核（或开发环境）发布x.x.x版本。]]></description>
         </item>
     </channel>
