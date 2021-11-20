@@ -13,19 +13,17 @@ export function BaseSystemWindow({ children, className, ...props } :
                                    styles["blue-accent"],
                                    styles["preview-border"],
                                    className) }
-            style={{ borderBottomLeftRadius: 0,
-                     borderBottomRightRadius: 0 }}
-            {...props} >
+            { ...props } >
             <div className={ styles["system-top-bar"] }>
                 <span
                     className={ styles["system-top-bar-circle"] }
-                    style={{ backgroundColor: "var(--periwinkle)" }} />
+                    style={{ backgroundColor: "var(--tree-red)" }} />
                 <span
                     className={ styles["system-top-bar-circle"] }
-                    style={{ backgroundColor: "var(--bright-cyan)" }} />
+                    style={{ backgroundColor: "var(--tree-orange)" }} />
                 <span
                     className={ styles["system-top-bar-circle"] }
-                    style={{ backgroundColor: "var(--sea-green)" }} />
+                    style={{ backgroundColor: "var(--tree-blue)" }} />
             </div>
             { children }
         </div>

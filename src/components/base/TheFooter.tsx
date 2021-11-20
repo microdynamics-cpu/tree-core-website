@@ -16,7 +16,7 @@ export function TheFooter() {
     ];
 
     return (
-        <footer className={ classNames("hero hero--primary", styles.footer) }>
+        <footer className={ classNames("hero hero--primary", styles.footer) } >
             <div className="container">
                 <div className="row">
                     <div className="col" style={{ flexGrow: 3 }}>

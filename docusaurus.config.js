@@ -29,7 +29,7 @@ module.exports = {
                 showReadingTime: true
             },
             theme: {
-                customCss: require.resolve("./src/css/index.module.css")
+                customCss: require.resolve("./src/css/custom.css")
             },
             sidebarCollapsible: false
         }
