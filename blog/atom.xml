@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microdynamics-cpu.github.io/blog</id>
     <title>木心项目 Blog</title>
-    <updated>2021-11-20T09:27:10.119Z</updated>
+    <updated>2021-11-20T14:43:38.743Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microdynamics-cpu.github.io/blog"/>
     <subtitle>木心项目 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[木心处理器核（或开发环境）应用在xxx]]></title>
         <id>yyyy-MM-dd_apps_xxx</id>
         <link href="https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_apps_xxx"/>
-        <updated>2021-11-20T09:27:10.119Z</updated>
+        <updated>2021-11-20T14:43:38.743Z</updated>
         <summary type="html"><![CDATA[木心处理器核（或开发环境）应用在xxx。]]></summary>
         <author>
             <name>myyerrol</name>
@@ -26,7 +26,7 @@
         <title type="html"><![CDATA[木心处理器核（或开发环境）xxx]]></title>
         <id>yyyy-MM-dd_news_xxx</id>
         <link href="https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_news_xxx"/>
-        <updated>2021-11-20T09:27:10.119Z</updated>
+        <updated>2021-11-20T14:43:38.743Z</updated>
         <summary type="html"><![CDATA[木心处理器核（或开发环境）xxx。]]></summary>
         <author>
             <name>myyerrol</name>
@@ -41,7 +41,7 @@
         <title type="html"><![CDATA[木心处理器核（或开发环境）发布x.x.x版本]]></title>
         <id>yyyy-MM-dd_version_x.x.x</id>
         <link href="https://microdynamics-cpu.github.io/blog/yyyy-MM-dd_version_x.x.x"/>
-        <updated>2021-11-20T09:27:10.119Z</updated>
+        <updated>2021-11-20T14:43:38.743Z</updated>
         <summary type="html"><![CDATA[木心处理器核（或开发环境）发布x.x.x版本。]]></summary>
         <author>
             <name>myyerrol</name>
