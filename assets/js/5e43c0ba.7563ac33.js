@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktree_core_website=self.webpackChunktree_core_website||[]).push([[5035],{6482:function(e,t,r){r.r(t),r.d(t,{default:function(){return s}});var n=r(7294),c=r(6254),i=r(2263);function s(){var e=(0,i.Z)().siteConfig.customFields.projectTagline;return n.createElement(c.Z,{description:e})}}}]);
