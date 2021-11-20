@@ -45,7 +45,7 @@ module.exports = {
             content: "如果你喜欢木心项目，请在" +
                      "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
                      "上给我们点一个星！⭐️",
-            backgroundColor: "#000",
+            backgroundColor: "#afb42b",
             textColor: "#fff",
             isCloseable: true
         },

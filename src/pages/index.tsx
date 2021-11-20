@@ -10,12 +10,11 @@ import { PageMainBrief } from "../components/main/PageMainBrief";
 export default function initIndexPage() {
     const context = useDocusaurusContext();
     const {
-        tagline,
-        customFields: { keywords }
+        customFields: { projectTagline }
     } = context.siteConfig;
 
     return (
-        <Layout description={ tagline } keywords={ keywords }>
+        <Layout description={ projectTagline }>
             <div className={ classNames(styles.landing,
                              styles["overflow-hidden"]) }>
                 <PageMainBrief />

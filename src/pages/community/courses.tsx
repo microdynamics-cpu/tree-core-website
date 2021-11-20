@@ -5,12 +5,11 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 export default function initCommunityCoursesPage() {
     const context = useDocusaurusContext();
     const {
-        tagline,
-        customFields: { keywords }
+        customFields: { projectTagline }
     } = context.siteConfig;
 
     return (
-        <Layout description={ tagline } keywords={ keywords }>
+        <Layout description={ projectTagline }>
         </Layout>
     );
 }

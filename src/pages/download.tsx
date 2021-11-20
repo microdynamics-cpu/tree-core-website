@@ -10,7 +10,7 @@ export default function initDownloadPage() {
     } = context.siteConfig;
 
     return (
-        <Layout description={ tagline } keywords={ keywords }>
+        <Layout description={ tagline } >
         </Layout>
     );
 }
