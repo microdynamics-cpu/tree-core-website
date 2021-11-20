@@ -655,7 +655,7 @@
     font-size: 1em;
     line-height: 1.75;
     margin-bottom: 0.8em;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .text.section-subtitle {
