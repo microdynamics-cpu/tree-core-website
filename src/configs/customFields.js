@@ -1,8 +1,8 @@
-const orgGitHubUrl = "https://github.com/microdynamics-cpu";
 const projectDomain = "treecore.xyz";
+const orgGitHubUrl = "https://github.com/microdynamics-cpu";
 
 module.exports = {
-    websiteUrl: `"https://${projectDomain}"`,
+    websiteUrl: `https://${projectDomain}`,
     websiteBar: {
         docs: {
             label: "文档",
@@ -114,10 +114,10 @@ module.exports = {
         }
     },
     websiteCopyright: `Copyright © ${new Date().getFullYear()} MicroDynamics CPU`,
-    teamEmail: "microdynamics@126.com",
-    teamGitHubUrl: "https://github.com/microdynamics",
     projectTagline: "创建免费、易用的RISC-V处理器核和开发环境",
     projectCPUGitHubUrl: `${orgGitHubUrl}/tree-core-cpu`,
     projectIDEGitHubUrl: `${orgGitHubUrl}/tree-core-ide`,
-    projectKeywords: ["cpu", "ide", "risc-v"]
+    projectKeywords: ["cpu", "ide", "risc-v"],
+    teamEmail: "microdynamics@126.com",
+    teamGitHubUrl: "https://github.com/microdynamics",
 }
