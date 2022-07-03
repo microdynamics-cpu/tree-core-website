@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktree_core_website=self.webpackChunktree_core_website||[]).push([[1653],{1975:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/version","name":"version","count":1,"permalink":"/blog/tags/version"}')}}]);

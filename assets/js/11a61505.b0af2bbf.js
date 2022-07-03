@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktree_core_website=self.webpackChunktree_core_website||[]).push([[9172],{8709:e=>{e.exports=JSON.parse('{"label":"risc-v","permalink":"/blog/tags/risc-v","allTagsPath":"/blog/tags","count":3}')}}]);
