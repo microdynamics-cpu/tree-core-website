@@ -72,7 +72,7 @@ export function PageMainBrief() {
                             }
                         </div>
                         <div className={ styles["center-if-sm"] }>
-                            <BaseButton to="/docs/tutorials/tutorials"
+                            <BaseButton to="/docs/treecore_ide/intro/intro_background/"
                                         style={{ marginTop: 3 + "em" }}>
                                 开始上手
                             </BaseButton>
