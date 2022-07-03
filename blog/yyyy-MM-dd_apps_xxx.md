@@ -1,6 +1,6 @@
 ---
-title: 木心处理器核（或开发环境）应用在xxx
-description: 木心处理器核（或开发环境）应用在xxx。
+title: 木心处理器开发环境应用案例
+description: 木心处理器开发环境
 slug: yyyy-MM-dd_apps_xxx
 authors: [myyerrol, maksyuki]
 tags: [apps, risc-v, cpu]

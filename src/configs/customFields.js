@@ -114,7 +114,7 @@ module.exports = {
         }
     },
     websiteCopyright: `Copyright © ${new Date().getFullYear()} MicroDynamics CPU`,
-    projectTagline: "创建免费、易用的RISC-V处理器核和开发环境",
+    projectTagline: "创建免费、易用的RISC-V处理器核和开发工具集",
     projectCPUGitHubUrl: `${orgGitHubUrl}/tree-core-cpu`,
     projectIDEGitHubUrl: `${orgGitHubUrl}/tree-core-ide`,
     projectKeywords: ["cpu", "ide", "risc-v"],

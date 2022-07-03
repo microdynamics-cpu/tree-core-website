@@ -22,7 +22,7 @@ module.exports = {
                 path: "./blog",
                 routeBasePath: "blog",
                 blogTitle: "博客",
-                blogDescription: "木心项目的博客。",
+                blogDescription: "木心项目的博客",
                 blogSidebarCount: 10,
                 blogSidebarTitle: "最近的博客",
                 postsPerPage: 15,

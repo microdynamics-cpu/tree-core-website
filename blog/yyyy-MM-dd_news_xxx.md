@@ -1,6 +1,6 @@
 ---
-title: 木心处理器核（或开发环境）xxx
-description: 木心处理器核（或开发环境）xxx。
+title: 木心处理器开发环境新闻动态
+description: 木心处理器开发环境
 slug: yyyy-MM-dd_news_xxx
 authors: [myyerrol, maksyuki]
 tags: [news, risc-v, cpu]

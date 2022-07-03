@@ -1,6 +1,6 @@
 ---
-title: 木心处理器核（或开发环境）发布x.x.x版本
-description: 木心处理器核（或开发环境）发布x.x.x版本。
+title: 木心处理器开发环境版本发布
+description: 木心处理器开发环境
 slug: yyyy-MM-dd_version_x.x.x
 authors: [myyerrol, maksyuki]
 tags: [version, risc-v, cpu]
