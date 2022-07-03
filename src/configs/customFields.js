@@ -8,26 +8,11 @@ module.exports = {
             label: "文档",
             position: "left",
             items: [{
-                label: "项目介绍",
-                to: "/docs/intro/intro_background"
+                label: "木心工具集",
+                to: "/docs/treecore_ide/intro/intro_background"
             }, {
-                label: "开始上手",
-                to: "/docs/start/start_configuration"
-            }, {
-                label: "教程文档",
-                to: "/docs/tutorials/tutorials"
-            }, {
-                label: "示例文档",
-                to: "/docs/examples/examples"
-            }, {
-                label: "接口文档",
-                to: "/docs/api/api_under_tech"
-            }, {
-                label: "风格指南",
-                to: "/docs/guide/guide"
-            }, {
-                label: "常见问题",
-                to: "/docs/faq/faq"
+                label: "木心处理器",
+                to: "/docs/treecore_cpu/intro/intro_background"
             }]
         },
         blog: {
@@ -63,7 +48,7 @@ module.exports = {
                 label: "比赛活动",
                 to: "/community/competitions"
             }, {
-                label: "在线课程",
+                label: "在线教程",
                 to: "/community/courses"
             }, {
                 label: "外部资源",

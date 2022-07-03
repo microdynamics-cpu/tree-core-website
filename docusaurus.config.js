@@ -31,7 +31,6 @@ module.exports = {
             theme: {
                 customCss: require.resolve("./src/css/custom.css")
             },
-            sidebarCollapsible: false
         }
     ]],
     themeConfig: {
@@ -65,15 +64,20 @@ module.exports = {
             ],
             hideOnScroll: false
         },
-        hideableSidebar: true,
+        docs: {
+            sidebar: {
+              hideable: true,
+              autoCollapseCategories: true,
+            },
+        },
         prism: {
             theme: require("prism-react-renderer/themes/oceanicNext"),
             defaultLanguage: "verilog"
         },
-        algolia: {
-            apiKey: "treecore",
-            indexName: "treecore",
-        }
+        // algolia: {
+        //     apiKey: "treecore",
+        //     indexName: "treecore",
+        // }
     },
     customFields: customFields
 };
