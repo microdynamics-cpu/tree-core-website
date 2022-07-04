@@ -19,6 +19,7 @@
     --greenblue-10: rgba(31, 216, 152, 0.1);
     --greenblue: #1fd898;
     --greyish-brown: #474747;
+    --bright-grey: #eeeeee;
     --pale-grey: #e8e6f5;
     --periwinkle-50: rgba(136, 89, 255, 0.2);
     --periwinkle: #8759ff;
@@ -130,7 +131,11 @@
     background-color: var(--ifm-font-color-base);
 }
 
-.landing :global .hero.hero--primary {
+[data-theme='light'] .landing :global .hero.hero--primary {
+   --ifm-hero-background-color: var(--bright-grey)
+}
+
+[data-theme='dark'] .landing :global .hero.hero--primary {
      /* --ifm-hero-background-color: var(--dark-blue-grey); */
     --ifm-hero-background-color: var(--tree-black)
 }
@@ -255,7 +260,11 @@
     margin-left: 1em;
 }
 
-.footer li {
+[data-theme='light'] .footer li {
+    color: var(--black);
+}
+
+[data-theme='dark'] .footer li {
     color: var(--white);
 }
 
@@ -579,7 +588,15 @@
     min-width: 240px;
 }
 
-.theme-icon {
+[data-theme='light'] .theme-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    display: inline-block;
+    color: var(--black);
+}
+
+[data-theme='dark'] .theme-icon {
     width: 40px;
     height: 40px;
     margin-right: 25px;
@@ -649,7 +666,16 @@
     line-height: 1.42;
 }
 
-.text.paragraph {
+[data-theme='light'] .text.paragraph {
+    color: var(--black);
+    font-family: Muli;
+    font-size: 1em;
+    line-height: 1.75;
+    margin-bottom: 0.8em;
+    /* opacity: 0.8; */
+}
+
+[data-theme='dark'] .text.paragraph {
     color: var(--white);
     font-family: Muli;
     font-size: 1em;
@@ -675,7 +701,17 @@
     font-weight: 600;
 }
 
-.supported {
+[data-theme='light'] .supported {
+    color: var(--black);
+    font-family: Muli;
+    font-size: 0.85em;
+    font-weight: 600;
+    line-height: 2;
+    margin-top: 3em;
+    /* opacity: 0.6; */
+}
+
+[data-theme='dark'] .supported {
     color: var(--white);
     font-family: Muli;
     font-size: 0.85em;
@@ -685,7 +721,12 @@
     /* opacity: 0.6; */
 }
 
-.title {
+[data-theme='light'] .title {
+    color: var(--black);
+    display: block;
+}
+
+[data-theme='dark'] .title {
     color: var(--white);
     display: block;
 }
@@ -719,7 +760,11 @@
     text-align: center;
 }
 
-.bullets {
+[data-theme='light'] .bullets {
+    color: var(--black) !important;
+}
+
+[data-theme='dark'] .bullets {
     color: var(--white) !important;
 }
 
