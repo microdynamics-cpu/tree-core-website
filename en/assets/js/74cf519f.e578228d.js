@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktree_core_website=self.webpackChunktree_core_website||[]).push([[7996],{6785:e=>{e.exports=JSON.parse('{"label":"version","permalink":"/en/blog/tags/version","allTagsPath":"/en/blog/tags","count":1}')}}]);
