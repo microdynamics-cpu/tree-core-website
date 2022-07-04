@@ -9,19 +9,77 @@ const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 // Need to follow online docs
 module.exports = {
     title: "木心项目",
-    tagline: customFields.projectTagline,
     url: "https://microdynamics-cpu.github.io",
     baseUrl: "/",
-    onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
     favicon: "favicon.ico",
     trailingSlash: true,
+    i18n: {
+        defaultLocale: "zh-CN",
+        locales: ["en", "zh-CN"],
+    },
+    onBrokenLinks: "throw",
+    onBrokenMarkdownLinks: "throw",
+    onDuplicateRoutes: "throw",
+    tagline: customFields.projectTagline,
     organizationName: "microdynamics-cpu",
     projectName: "tree-core-website",
-    i18n: {
-        defaultLocale: "zh-Hans",
-        locales: ["zh-Hans"],
+    themeConfig: {
+        colorMode: {
+            defaultMode: "dark",
+            disableSwitch: false,
+            respectPrefersColorScheme: false
+        },
+        metadata: [{ name: "keywords", content: "eda, sta" }],
+        announcementBar: {
+            id: "treecore-bar",
+            content: "如果你喜欢木心项目，请在" +
+                "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
+                "上给我们点一个星！⭐️",
+            backgroundColor: "#afb42b",
+            textColor: "#fff",
+            isCloseable: true
+        },
+        navbar: {
+            title: "",
+            logo: {
+                alt: "treecore logo",
+                src: "/img/treecore.svg"
+            },
+            items: [
+                customFields.websiteBar.docs,
+                customFields.websiteBar.blog,
+                customFields.websiteBar.community,
+                customFields.websiteBar.download,
+                customFields.websiteBar.team,
+                customFields.websiteBar.support,
+                {
+                    type: "localeDropdown",
+                    position: "right",
+                },
+                // {
+                //     type: 'search',
+                //     position: 'right',
+                // },
+            ],
+            hideOnScroll: false
+        },
+        docs: {
+            sidebar: {
+                hideable: true,
+                autoCollapseCategories: true,
+            },
+        },
+        prism: {
+            theme: lightCodeTheme,
+            darkTheme: darkCodeTheme,
+            defaultLanguage: "verilog"
+        },
+        // algolia: {
+        //     apiKey: "treecore",
+        //     indexName: "treecore",
+        // }
     },
+
     presets: [[
         "@docusaurus/preset-classic", {
             docs: {
@@ -46,6 +104,7 @@ module.exports = {
             },
         }
     ]],
+    customFields: customFields,
     stylesheets: [
         {
             href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -55,53 +114,4 @@ module.exports = {
             crossorigin: 'anonymous',
         },
     ],
-    themeConfig: {
-        metadata: [{ name: "keywords", content: "eda, sta" }],
-        colorMode: {
-            defaultMode: "dark",
-            disableSwitch: false,
-            respectPrefersColorScheme: false
-        },
-        announcementBar: {
-            id: "treecore-bar",
-            content: "如果你喜欢木心项目，请在" +
-                "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
-                "上给我们点一个星！⭐️",
-            backgroundColor: "#afb42b",
-            textColor: "#fff",
-            isCloseable: true
-        },
-        navbar: {
-            title: "",
-            logo: {
-                alt: "treecore logo",
-                src: "/img/treecore.svg"
-            },
-            items: [
-                customFields.websiteBar.docs,
-                customFields.websiteBar.blog,
-                customFields.websiteBar.community,
-                customFields.websiteBar.download,
-                customFields.websiteBar.team,
-                customFields.websiteBar.support
-            ],
-            hideOnScroll: false
-        },
-        docs: {
-            sidebar: {
-                hideable: true,
-                autoCollapseCategories: true,
-            },
-        },
-        prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
-            defaultLanguage: "verilog"
-        },
-        // algolia: {
-        //     apiKey: "treecore",
-        //     indexName: "treecore",
-        // }
-    },
-    customFields: customFields
 };

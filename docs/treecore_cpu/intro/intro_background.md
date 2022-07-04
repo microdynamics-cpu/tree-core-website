@@ -3,7 +3,7 @@ id: "intro_background"
 title: "项目背景"
 ---
 
-# Tabs
+## Tabs
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
   <TabItem value="mac" label="macOS">Use Command + V to paste.</TabItem>
 </Tabs>
 
-# Code title
+## Code title
 
 ```jsx title="/src/components/HelloCodeTitle.js"
 function HelloCodeTitle(props) {
@@ -25,12 +25,12 @@ function HelloCodeTitle(props) {
 }
 ```
 
-# Syntax highlighting
+## Syntax highlighting
 ```js
 console.log('Every repo must come with a mascot.');
 ```
 
-# Line highlighting
+## Line highlighting
 ```js
 function HighlightSomeText(highlight) {
   if (highlight) {
@@ -52,7 +52,7 @@ function HighlightMoreText(highlight) {
 }
 ```
 
-# Line numbering
+## Line numbering
 ```jsx {1,4-6,11} showLineNumbers
 import React from 'react';
 
@@ -67,7 +67,7 @@ function MyComponent(props) {
 export default MyComponent;
 ```
 
-# Interactive code editor
+## Interactive code editor
 ```jsx live
 function Clock(props) {
   const [date, setDate] = useState(new Date());
@@ -91,13 +91,13 @@ function Clock(props) {
 }
 ```
 
-# Using JSX markup in code blocks
+## Using JSX markup in code blocks
 <pre>
   <b>Input: </b>1 2 3 4{'\n'}
   <b>Output: </b>"366300745"{'\n'}
 </pre>
 
-# Multi-language support code blocks
+## Multi-language support code blocks
 <Tabs>
 <TabItem value="js" label="JavaScript">
 
@@ -128,7 +128,7 @@ class HelloWorld {
 </TabItem>
 </Tabs>
 
-# Admonitions
+## Admonitions
 :::note
 
 Some **content** with _markdown_ `syntax`. Check [this `api`](#).
@@ -159,7 +159,7 @@ Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
 :::
 
-# Admonitions with MDX
+## Admonitions with MDX
 :::tip Use tabs in admonitions
 
 <Tabs>
@@ -170,14 +170,14 @@ Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
 :::
 
-# Assets
+## Assets
 ![Example banner](https://github.com/maksyuki/TaichiGAME-res/raw/main/bias_lambda.png)
 ![An image from the static](/img/microdynamics-cpu.svg)
 
-# Markdown links
+## Markdown links
 I am referencing a [intro_changelog](intro_changelog.md).
 
-# Math Equations
+## Math Equations
 Let $f\colon[a,b]\to\R$ be Riemann integrable. Let $F\colon[a,b]\to\R$ be
 $F(x)=\int_{a}^{x} f(t)\,dt$. Then $F$ is continuous, and at all $x$ such that
 $f$ is continuous at $x$, $F$ is differentiable at $x$ with $F'(x)=f(x)$.
