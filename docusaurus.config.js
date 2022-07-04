@@ -1,6 +1,8 @@
 const customFields = require("./src/configs/customFields");
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 
 // Katex use the exact same versions.
 // The latest versions are incompatible with Docusaurus 2.
@@ -16,6 +18,10 @@ module.exports = {
     trailingSlash: true,
     organizationName: "microdynamics-cpu",
     projectName: "tree-core-website",
+    i18n: {
+        defaultLocale: "zh-Hans",
+        locales: ["zh-Hans"],
+    },
     presets: [[
         "@docusaurus/preset-classic", {
             docs: {
@@ -42,15 +48,15 @@ module.exports = {
     ]],
     stylesheets: [
         {
-          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-          type: 'text/css',
-          integrity:
-            'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-          crossorigin: 'anonymous',
+            href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+            type: 'text/css',
+            integrity:
+                'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+            crossorigin: 'anonymous',
         },
     ],
     themeConfig: {
-        metadata: [{name: "keywords", content: "eda, sta"}],
+        metadata: [{ name: "keywords", content: "eda, sta" }],
         colorMode: {
             defaultMode: "dark",
             disableSwitch: false,
@@ -59,8 +65,8 @@ module.exports = {
         announcementBar: {
             id: "treecore-bar",
             content: "如果你喜欢木心项目，请在" +
-                     "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
-                     "上给我们点一个星！⭐️",
+                "<a target='_blank' href='https://github.com/microdynamics-cpu'>GitHub</a>" +
+                "上给我们点一个星！⭐️",
             backgroundColor: "#afb42b",
             textColor: "#fff",
             isCloseable: true
@@ -83,12 +89,13 @@ module.exports = {
         },
         docs: {
             sidebar: {
-              hideable: true,
-              autoCollapseCategories: true,
+                hideable: true,
+                autoCollapseCategories: true,
             },
         },
         prism: {
-            theme: require("prism-react-renderer/themes/oceanicNext"),
+            theme: lightCodeTheme,
+            darkTheme: darkCodeTheme,
             defaultLanguage: "verilog"
         },
         // algolia: {
