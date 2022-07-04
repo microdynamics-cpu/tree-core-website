@@ -55,6 +55,21 @@ module.exports = {
                 {
                     type: "localeDropdown",
                     position: "right",
+                    dropdownItemsAfter: [
+                        {
+                            type: 'html',
+                            value: '<hr style="margin: 0.3rem 0;">',
+                        },
+                        {
+                            href: "https://github.com/microdynamics-cpu",
+                            label: "Help us translate",
+                        },
+                    ],
+                },
+                {
+                    label: "GitHub",
+                    href: "https://github.com/microdynamics-cpu",
+                    position: "right",
                 },
                 // {
                 //     type: 'search',

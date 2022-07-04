@@ -46,10 +46,9 @@ export function PageMainBrief() {
                         </span>
                         <ul className={ classNames(styles.text,
                                                    styles.bullets) }>
-                            <li>简单易学</li>
-                            <li>扩展性强</li>
-                            <li>兼容性强</li>
                             <li>开源免费</li>
+                            <li>简单易用</li>
+                            <li>扩展性强</li>
                         </ul>
                         <div className={ styles["center-if-sm"] }>
                             <p className={ classNames(styles.text,
