@@ -1,5 +1,10 @@
 const customFields = require("./src/configs/customFields");
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
+// Katex use the exact same versions.
+// The latest versions are incompatible with Docusaurus 2.
+// Need to follow online docs
 module.exports = {
     title: "木心项目",
     tagline: customFields.projectTagline,
@@ -15,7 +20,9 @@ module.exports = {
         "@docusaurus/preset-classic", {
             docs: {
                 path: "./docs",
-                sidebarPath: require.resolve("./sidebars.js")
+                sidebarPath: require.resolve("./sidebars.js"),
+                remarkPlugins: [math],
+                rehypePlugins: [katex],
             },
             blog: {
                 id: "blog",
@@ -33,6 +40,15 @@ module.exports = {
             },
         }
     ]],
+    stylesheets: [
+        {
+          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+          type: 'text/css',
+          integrity:
+            'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+          crossorigin: 'anonymous',
+        },
+    ],
     themeConfig: {
         colorMode: {
             defaultMode: "dark",
