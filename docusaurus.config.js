@@ -50,6 +50,7 @@ module.exports = {
         },
     ],
     themeConfig: {
+        metadata: [{name: "keywords", content: "eda, sta"}],
         colorMode: {
             defaultMode: "dark",
             disableSwitch: false,
