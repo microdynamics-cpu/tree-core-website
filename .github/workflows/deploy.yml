@@ -13,10 +13,9 @@ jobs:
               uses: actions/checkout@master
               with:
                 repository: "microdynamics-cpu/backend-design-tutorial"
-                path: docs
+                path: docs/backend-design-tutorial
             - name: test
               run: |
-                ls
                 cd docs
                 ls
             - name: Deploy
