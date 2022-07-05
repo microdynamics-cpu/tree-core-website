@@ -10,10 +10,14 @@ jobs:
             - name: Checkout
               uses: actions/checkout@master
             - name: Config docs
-              run: |
-                ls
-                cd docs
-                git clone https://github.com/microdynamics-cpu/backend-design-tutorial.git
+              uses: actions/checkout@master
+              with:
+                repository: "microdynamics-cpu/backend-design-tutorial"
+                path: docs
+              # run: |
+              #   ls
+              #   cd docs
+              #   git clone https://github.com/microdynamics-cpu/backend-design-tutorial.git
             - name: Deploy
               uses: redkubes/docusaurus-deploy-action@master
               with:
