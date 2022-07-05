@@ -8,10 +8,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v3
+              uses: actions/checkout@master
             - name: Config docs
               run: |
                 ls
+                cd docs
+                git clone https://github.com/microdynamics-cpu/backend-design-tutorial.git
             - name: Deploy
               uses: redkubes/docusaurus-deploy-action@master
               with:
