@@ -16,6 +16,11 @@ module.exports = {
             {
                 项目介绍: ["treecore_cpu/intro/intro_background", "treecore_cpu/intro/intro_description", "treecore_cpu/intro/intro_future", "treecore_cpu/intro/intro_changelog"],
             }
+        ],
+        数字后端实验教程: [
+            {
+                项目介绍: ["backend-design-tutorial/intro/intro"],
+            }
         ]
     },
 };
