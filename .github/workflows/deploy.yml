@@ -14,10 +14,11 @@ jobs:
               with:
                 repository: "microdynamics-cpu/backend-design-tutorial"
                 path: docs
-              # run: |
-              #   ls
-              #   cd docs
-              #   git clone https://github.com/microdynamics-cpu/backend-design-tutorial.git
+            - name: test
+              run: |
+                ls
+                cd docs
+                ls
             - name: Deploy
               uses: redkubes/docusaurus-deploy-action@master
               with:
