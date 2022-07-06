@@ -17,9 +17,15 @@ module.exports = {
                 项目介绍: ["treecore_cpu/intro/intro_background", "treecore_cpu/intro/intro_description", "treecore_cpu/intro/intro_future", "treecore_cpu/intro/intro_changelog"],
             }
         ],
-        数字后端实验教程: [
+        数字后端实验: [
             {
-                项目介绍: ["backend-design-tutorial/intro/intro"],
+                "第零章：数字后端概述": [
+                    "backend-design-tutorial/intro/why",
+                    "backend-design-tutorial/intro/what",
+                    "backend-design-tutorial/intro/pre_knwl",
+                    "backend-design-tutorial/intro/env_config",
+                ],
+                "第一章：静态时序分析": ["backend-design-tutorial/sta/sta"],
             }
         ]
     },

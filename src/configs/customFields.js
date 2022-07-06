@@ -14,8 +14,8 @@ module.exports = {
                 label: "木心处理器",
                 to: "/docs/treecore_cpu/intro/intro_background"
             }, {
-                label: "数字后端实验教程",
-                to: "/docs/backend-design-tutorial/intro"
+                label: "数字后端实验",
+                to: "/docs/backend-design-tutorial/intro/why"
             }]
         },
         blog: {
