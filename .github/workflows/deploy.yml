@@ -14,10 +14,6 @@ jobs:
               with:
                 repository: "microdynamics-cpu/backend-design-tutorial"
                 path: docs/backend-design-tutorial
-            - name: test
-              run: |
-                cd docs
-                ls
             - name: Deploy
               uses: redkubes/docusaurus-deploy-action@master
               with:
