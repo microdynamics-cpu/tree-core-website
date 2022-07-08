@@ -28,6 +28,7 @@ module.exports = {
                 "第一章：静态时序分析": ["backend-design-tutorial/sta/sta"],
                 "第二章：逻辑综合": ["backend-design-tutorial/synth/concept"],
                 "第三章：布局布线": ["backend-design-tutorial/pr/floorplan"],
+                "附录": ["backend-design-tutorial/appx/refer"],
             }
         ]
     },
