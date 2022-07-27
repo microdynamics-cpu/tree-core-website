@@ -71,10 +71,10 @@ module.exports = {
                     href: "https://github.com/microdynamics-cpu",
                     position: "right",
                 },
-                // {
-                //     type: 'search',
-                //     position: 'right',
-                // },
+                {
+                    type: 'search',
+                    position: 'right',
+                },
             ],
             hideOnScroll: false
         },
@@ -89,10 +89,11 @@ module.exports = {
             darkTheme: darkCodeTheme,
             defaultLanguage: "verilog"
         },
-        // algolia: {
-        //     apiKey: "treecore",
-        //     indexName: "treecore",
-        // }
+        algolia: {
+            appId: "9B4M4LY1NS",
+            apiKey: "f9e6016c21db9cade0ce260e03e14c7f",
+            indexName: "treecore",
+        },
     },
 
     presets: [[
